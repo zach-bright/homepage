@@ -1,43 +1,35 @@
 import React from "react"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom"
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom"
 import ReactDOM from "react-dom";
+import Footer from './components/templates/Footer.jsx'
 import Home from './components/pages/Home.jsx'
+import Resume from './components/pages/Resume.jsx'
+import './styles/style.css'
+
+const PAGES = [
+  { path: '/resume', label: 'Resume', component: Resume }
+]
 
 export default function App() {
+  let linkList = PAGES.map((page) => <li><Link to={page.path} className="router-link">{page.label}</Link></li>)
+  let routeList = PAGES.map((page) => <Route path={page.path} component={page.component} />)
   return (
     <Router>
-      <div>
+      <nav className="nav-container">
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          {/* <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/topics">Topics</Link>
-          </li> */}
+          <li><Link to='/' className='router-link'>Home</Link></li>
+          {linkList}
         </ul>
-
-        <Switch>
-          {/* <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/topics">
-            <Topics />
-          </Route> */}
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
+      </nav>
+      <Switch>
+        <div className="content-container">
+          <React.Fragment>
+            <Route exact path='/' component={Home} /> 
+            {routeList}
+          </React.Fragment>
+        </div>
+      </Switch>
+      <Footer />
     </Router>
   )
 }

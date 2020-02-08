@@ -1,7 +1,10 @@
 import React from "react"
+import Text from './Text.jsx'
 
 export default ({ content }) => {
   return (
-    <h3>{content}</h3>
+    <h2>
+      <Text content={content} />
+    </h2>
   )
 }

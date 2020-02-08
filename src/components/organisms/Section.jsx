@@ -12,7 +12,7 @@ export default ({ headerContent, paragraphs }) => {
     }
   })
   return (
-    <div>
+    <div className="section-container">
       <MediumHeader content={headerContent} />
       {paragraphComponents}
     </div>

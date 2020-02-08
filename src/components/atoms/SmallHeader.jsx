@@ -3,8 +3,6 @@ import Text from './Text.jsx'
 
 export default ({ content }) => {
   return (
-    <p>
-      <Text content={content} />
-    </p>
+    <h3><Text content={content} /></h3>
   )
 }

@@ -2,11 +2,11 @@ import React from "react"
 import Image from '../atoms/Image.jsx'
 import Paragraph from '../atoms/Paragraph.jsx'
 
-export default ({ image, paragraph }) => {
+export default ({ image, content }) => {
   return (
-    <div>
-      <Image content={image} />
-      <Paragraph content={paragraph} />
+    <div className="paragraph-embedded-image-container">
+      <Image {...image} />
+      <Paragraph content={content} />
     </div>
   )
 }
