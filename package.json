@@ -1,0 +1,23 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "My homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zach-bright/homepage.git"
+  },
+  "author": "Zachary Bright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zach-bright/homepage/issues"
+  },
+  "homepage": "https://github.com/zach-bright/homepage#readme",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
