@@ -53,12 +53,45 @@ html, body {
   background-color: #DDD;
 }
 
+.small-header-right-text-container .right-text-container {
+  float: right;
+}
+
 .article-footer-container {
   margin-top: 16px;
 }
 
+.bullet-point-list-container {
+  margin-top: 0px;
+}
+
+.big-header-container {
+  font-weight: normal;
+  font-size: 32pt;
+}
+
+.medium-header-container {
+  text-decoration: none;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 16px;
+}
+.medium-header-container:after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -2px;
+  height: 1px;
+  background-color: black;
+  width: 100%;
+}
+
+.small-header-container {
+  font-size: 14pt;
+}
+
 .default-font {
-  font-family: 'Courier'
+  font-family: 'Georgia, Times New Roman, serif';
+  line-height: 1.4;
 }
 .default-image {
   float: left;

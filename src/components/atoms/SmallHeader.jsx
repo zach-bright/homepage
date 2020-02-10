@@ -3,6 +3,8 @@ import Text from './Text.jsx'
 
 export default ({ content }) => {
   return (
-    <h3><Text content={content} /></h3>
+    <b className='small-header-container'>
+      <Text content={content} />
+    </b>
   )
 }
