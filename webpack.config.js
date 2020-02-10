@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require('path')
 
 module.exports = {
   output: {
@@ -26,6 +27,14 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       }
     ]
+  },
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src/components'),
+      assets: path.resolve(__dirname, 'assets'),
+      util: path.resolve(__dirname, 'src/util'),
+      styles: path.resolve(__dirname, 'src/styles')
+    }
   },
   devServer: {
     open: 'chromium',

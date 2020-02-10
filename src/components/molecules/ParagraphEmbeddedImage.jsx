@@ -1,6 +1,6 @@
 import React from "react"
-import Image from '../atoms/Image.jsx'
-import Paragraph from '../atoms/Paragraph.jsx'
+import Image from 'components/atoms/Image.jsx'
+import Paragraph from 'components/atoms/Paragraph.jsx'
 
 export default ({ image, content }) => {
   return (

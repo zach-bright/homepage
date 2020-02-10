@@ -1,6 +1,6 @@
 import React from "react"
-import HeadedBulletPointList from './HeadedBulletPointList.jsx'
-import MediumHeader from '../atoms/MediumHeader.jsx'
+import HeadedBulletPointList from 'components/organisms/HeadedBulletPointList.jsx'
+import MediumHeader from 'components/atoms/MediumHeader.jsx'
 
 export default ({ headerContent, headedBulletPointLists }) => {
   return (

@@ -1,7 +1,7 @@
 import React from "react"
-import ParagraphEmbeddedImage from '../molecules/ParagraphEmbeddedImage.jsx'
-import Paragraph from '../atoms/Paragraph.jsx'
-import MediumHeader from '../atoms/MediumHeader.jsx'
+import ParagraphEmbeddedImage from 'components/molecules/ParagraphEmbeddedImage.jsx'
+import Paragraph from 'components/atoms/Paragraph.jsx'
+import MediumHeader from 'components/atoms/MediumHeader.jsx'
 
 export default ({ headerContent, paragraphs }) => {
   let paragraphComponents = paragraphs.map((paragraph) => {

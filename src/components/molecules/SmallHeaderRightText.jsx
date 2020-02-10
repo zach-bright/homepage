@@ -1,6 +1,6 @@
 import React from "react"
-import Text from '../atoms/Text.jsx'
-import SmallHeader from '../atoms/SmallHeader.jsx'
+import Text from 'components/atoms/Text.jsx'
+import SmallHeader from 'components/atoms/SmallHeader.jsx'
 
 export default ({ header, rightText }) => {
   return (

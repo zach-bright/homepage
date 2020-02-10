@@ -1,10 +1,10 @@
 import React from "react"
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom"
 import ReactDOM from "react-dom";
-import Footer from './components/templates/Footer.jsx'
-import Home from './components/pages/Home.jsx'
-import Resume from './components/pages/Resume.jsx'
-import './styles/style.css'
+import Footer from 'components/templates/Footer.jsx'
+import Home from 'components/pages/Home.jsx'
+import Resume from 'components/pages/Resume.jsx'
+import 'styles/style.css'
 
 const PAGES = [
   { path: '/resume', label: 'Resume', component: Resume }

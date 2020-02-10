@@ -1,12 +1,12 @@
 import React from 'react'
-import BigHeader from '../components/atoms/BigHeader.jsx'
-import ArticleFooter from '../components/organisms/ArticleFooter.jsx'
-import BasicSection from '../components/organisms/BasicSection.jsx'
-import BulletPointSection from '../components/organisms/BulletPointSection.jsx'
+import BigHeader from 'components/atoms/BigHeader.jsx'
+import ArticleFooter from 'components/organisms/ArticleFooter.jsx'
+import BasicSection from 'components/organisms/BasicSection.jsx'
+import BulletPointSection from 'components/organisms/BulletPointSection.jsx'
 
 let articleBuilder = {
   build: (article) => {
-    //todo: parse metadata
+    // todo: parse metadata
     let width = article.metadata.width || 'auto'
     let header = articleBuilder.buildTitle(article.title)
     let sections = articleBuilder.buildSections(article.sections)

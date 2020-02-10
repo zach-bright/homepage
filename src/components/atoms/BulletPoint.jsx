@@ -1,5 +1,5 @@
 import React from "react"
-import Text from './Text.jsx'
+import Text from 'components/atoms/Text.jsx'
 
 export default ({ content }) => {
   return (
